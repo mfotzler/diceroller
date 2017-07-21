@@ -12,7 +12,7 @@ namespace DiceRoller.Controllers
         {
             var random = new Random();
             var rolls = Enumerable.Range(0, count)
-                .Select(x => random.Next(1, size))
+                .Select(x => random.Next(1, size+1))
                 .ToArray();
 
             return Json(rolls);
