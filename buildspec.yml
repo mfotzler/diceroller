@@ -12,3 +12,4 @@ artifacts:
   files:
     - DiceRoller/build/**/*
     - start-api.sh
+    - appspec.yml
