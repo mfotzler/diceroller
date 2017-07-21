@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - sh build-api.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - DiceRoller/build/**/*
+	- start-api.sh

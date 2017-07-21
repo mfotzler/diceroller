@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: **/*
+    destination: /test
+hooks:
+  ApplicationStart:
+    - location: start-api.sh
+      timeout: 3600
